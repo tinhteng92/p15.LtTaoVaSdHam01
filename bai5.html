@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="findStar()">Click here</button>
+
+</body>
+</html>
+<script>
+    let nameStar = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let Star = ['UrsaMinor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'UrsaMajor', 'Leo'];
+
+    function findStar() {
+        let inStar = prompt('Enter name of Star: ');
+        for (let i = 0; i < nameStar.length; i++) {
+            if (inStar === nameStar[i]){
+                nameStar[i] = Star[i];
+                alert(inStar + ' thuộc chòm sao ' + Star[i]);
+                break;
+            }
+            else if (i === nameStar.length -1){
+                alert('Not found')
+            }
+        }
+    }
+
+    // function findStar(){
+    //     let inStar = prompt('Enter name of Star: ');
+    //     if (check(inStar)){
+    //        alert(inStar + '  chòm sao ' + Star[nameStar.indexOf(inStar)]);
+    //     }else {
+    //         alert('Not Found');
+    //     }
+    // }
+    // function check(inStar){
+    //     for (let i = 0; i < nameStar.length; i++){
+    //         if (inStar === nameStar[i]){
+    //             return true
+    //         }
+    //     }
+    //     return false
+    // }
+</script>

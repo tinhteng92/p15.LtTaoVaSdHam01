@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="change()">Click</button>
+<p>Nhấn vào nút "Click" để nhận kết quả khi tăng giá trị đối số lên 1
+    và trả lại giá trị cho lời gọi hàm: </p>
+<p id="result" ></p>
+</body>
+</html>
+<script>
+    function change(number){
+        number += 1
+        return number
+    }
+    document.getElementById('result').innerHTML = change(6)
+</script>
